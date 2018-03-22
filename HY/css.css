@@ -1,0 +1,51 @@
+/* Initial Setup */
+html { font-size: 16px; font-family: "맑은 고딕", sans-serif; }
+code { color: #ff7567; }
+.container { position: absolute; left: 50%; transform: translate(-50%, 0); width: 80%; max-width: 1140px; float: left; }
+.content   { margin-bottom: 3rem; }
+.center    { text-align: center; }
+
+/* Table Styler */
+table.table { margin: 20px auto 0 auto; padding: 0; border: none; border-collapse: collapse; width: 100%; text-align: left; }
+
+table.table.pull-left   { text-align: left; }
+table.table.pull-right  { text-align: right; }
+table.table.pull-center { text-align: center; }
+
+table.table > caption { caption-side: bottom; color: grey; margin: 1rem 0 0 0; text-align: left; }
+table.table th { border-top: 1px solid #ced6e0; border-bottom: 1px solid #ced6e0; padding: 0.9rem 0.6rem; }
+table.table td { border-top: 1px solid #ced6e0; border-bottom: 1px solid #ced6e0; padding: 0.9rem 0.3rem; }
+table.table {  }
+table.table > thead { border-bottom: 2px solid #bdc3c7; }
+table.table > tbody > tr:hover { background-color: #ced6e0; }
+table.table > tbody > tr:last-child > th { border-bottom: 0; }
+table.table > tbody > tr:last-child > td { border-bottom: 0; }
+
+div.pagination { float: left; border-collapse: collapse; display: inline-block; }
+div.pagination > a { float: left; text-align: center; border: 1px solid #bdc3c7; margin: 0; padding: 0.4rem 0.8rem; color: blue; text-decoration: none; }
+div.pagination > a:visited     { color: blue; }
+div.pagination > a:active      { color: blue; }
+div.pagination > a:first-child { border-top-left-radius: 0.2rem; border-bottom-left-radius: 0.2rem; }
+div.pagination > a:last-child  { border-top-right-radius: 0.2rem; border-bottom-right-radius: 0.2rem; }
+
+a.button      { text-decoration: none; color: white; background-color: dodgerblue; padding: 0.4rem 0.8rem; border-radius: 0.2rem; }
+
+input.button  { text-decoration: none; color: white; background-color: dodgerblue; padding: 0.4rem 0.8rem; border-radius: 0.2rem; }
+
+button.button {}
+
+/* Media queries */
+@media screen and (max-width: 1199px) {
+    .container { max-width: 960px; }
+}
+
+@media screen and (max-width: 767px) {
+    .container { width: 85%; max-width: 720px; }
+}
+
+@media screen and (max-width: 575px) {
+    html { font-size: 14px; }
+    .container { width: 90%; max-width: 540px; }
+    table.table th { padding: 0.8rem 0.2rem; }
+    table.table td { padding: 0.8rem 0.2rem; }
+}
